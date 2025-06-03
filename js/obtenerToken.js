@@ -2,10 +2,9 @@ export async function obtenerToken() {
     const url = "https://api-sandbox.factus.com.co/oauth/token";
     const credentials = {
         grant_type: "password",
-        client_id: "9e7839cf-a898-4e41-9cd0-80ebe85bf76c",
-        client_secret: "ex3xWm90Pnf9DMZo92T0idI5wsrJg6BONJ9vYy66",
-        username: "sandbox@factus.com.co",
-        password: "sandbox2024%"
+        client_id: "tu_client_id", // Reemplaza con tu client_id
+        username: "tu_usuario", // Reemplaza con tu usuario
+        password: "tu_contraseña" // Reemplaza con tu contraseña
     };
 
     const tokenData = JSON.parse(localStorage.getItem("factus_token"));
